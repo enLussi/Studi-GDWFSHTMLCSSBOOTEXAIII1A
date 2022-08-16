@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inscription</title>
+
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/custom.css">
+
+  <script type = "text/javascript" src="js/jquery-3.6.0.js"></script>
+  <script type = "text/javascript" src="https://unpkg.com/@popperjs/core@2"></script>
+  <script type = "text/javascript" src="js/bootstrap.min.js"></script>
+
+</head>
+<body>
+  <!-- 
+    Header:
+    commun à toutes les pages du site composé d'une barre de navigation avec un élément bootstrap dropdown
+    un logo et une image de fonds.
+    le <nav> est en display grid
+  -->
+  <header>
+    <nav class="container">
+      <div class="row justify-content-md-center">
+        <div class="dropdown col-5">
+          <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="/assets/svgs/aligner-justifier.svg" alt="" width="40" height="40">
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <li><a class="dropdown-item" href="index.html">Actualité</a></li>
+            <li><a class="dropdown-item" href="championship.html">Evènement Nationaux</a></li>
+            <li><a class="dropdown-item" href="subscription.html">Inscription</a></li>
+          </ul>
+          <div class=""></div>
+        </div>
+        <div class="col-7">
+          <img src="assets/imgs/as-logo.png" alt="" height="50">
+        </div>
+      </div>
+    </nav>
+    <div>
+      <img class="img-header" src="assets/imgs/img-header.jpg" alt="">
+    </div>
+  </header>
+  <!-- Fin Header -->
+
+  <!-- Contenu -->
+  <!-- Fin du contenu -->
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-socials">
+      <ul class="socials row">
+        <li class="col-2"><a href=""><img src="assets/svgs/instagram.svg" alt="" width="20"></a></li>
+        <li class="col-2"><a href=""><img src="assets/svgs/tiktok.svg" alt="" width="20"></a></li>
+        <li class="col-2"><a href=""><img src="assets/svgs/twitter.svg" alt="" width="20"></a></li>
+      </ul>
+    </div>
+    
+    <div class="container footer-links">
+      <ul class="row">
+        <li class="col"><a class="no-style" href="">Plan du site</a></li>
+        <li class="col"><a class="no-style" href="">Mentions légales</a></li>
+        <li class="col"><a class="no-style" href="">CGUV</a></li>
+      </ul>
+    </div>
+  </footer>
+  <!-- Fin du Footer -->
+</body>
+</html>
