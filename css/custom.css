@@ -59,6 +59,10 @@ article h3 {
   color: var(--main-color);
 }
 
+article h3 a {
+  color: var(--main-color);
+}
+
 article p {
   text-align: justify;
   font-size: 14px;
@@ -78,6 +82,11 @@ article p {
 
 article img {
   border: 2px solid #0a0a0a;
+}
+
+form > div {
+  margin: 5px 0;
+  padding: 5px 0;
 }
 
 /* CSS pour le footer */

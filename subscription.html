@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inscription</title>
+
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/custom.css">
+
+  <script type = "text/javascript" src="js/jquery-3.6.0.js"></script>
+  <script type = "text/javascript" src="https://unpkg.com/@popperjs/core@2"></script>
+  <script type = "text/javascript" src="js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<!-- 
+    Header:
+    commun à toutes les pages du site composé d'une barre de navigation avec un élément bootstrap dropdown
+    un logo et une image de fonds.
+    le <nav> est en display grid
+  -->
+  <header>
+    <nav class="container">
+      <div class="row justify-content-md-center">
+        <div class="dropdown col-5">
+          <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="/assets/svgs/aligner-justifier.svg" alt="" width="40" height="40">
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <li><a class="dropdown-item" href="index.html">Actualité</a></li>
+            <li><a class="dropdown-item" href="">Evènement Nationaux</a></li>
+            <li><a class="dropdown-item" href="">Inscription</a></li>
+          </ul>
+          <div class=""></div>
+        </div>
+        <div class="col-7">
+          <img src="assets/imgs/as-logo.png" alt="" height="50">
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Fin Header -->
+  <!-- Contenu -->
+  <main>
+    <section>
+      <h2>Informations</h2>
+      <article>
+        <h3>SAISON 2022/2023</h3>
+        <p>Les réinscriptions et inscriptions pour les adultes et les enfants sont disponibles tout au long de l'année. 
+          Vous devez vous munir d'un certificat médicale de moins de 6 mois avec la mention "apte à la participation" pour 
+          l'activité souhaitée.   
+        </p>
+      </article>
+      <!-- ajouter tarifs license pour chaques sports -->
+      <article>
+        <h3>Formulaire d'inscription</h3>
+        <form action="subcription.php" method="post">
+
+          <div class="row g-2">
+            <div class="form-group col-lg-5">
+              <label for="name" class="form-label">Nom :</label>
+              <input type="text" id="name" class="form-control">
+            </div>
+            <div class="form-group col-lg-5">
+              <label for="surname" class="form-label">Prénom :</label>
+              <input type="text" id="surname" class="form-control">
+            </div>
+          </div>
+
+          <div class="form-group col-lg-5">
+            <label for="birthdate" class="form-label">Né le :</label>
+            <input id="date" type="date" id="birthdate" class="form-control">
+          </div>
+
+          <div class="row g-2">
+            <div class="form-check col-3">
+              <input type="radio" name="gender" id="genderM" class="form-check-input">
+              <label for="genderM" class="form-check-label">Homme</label>
+            </div>
+            <div class="form-check col-3">
+              <input type="radio" name="gender" id="genderF" class="form-check-input">
+              <label for="genderF" class="form-check-label">Femme</label>
+            </div>
+          </div>
+
+          <div class="form-group col-lg-5">
+            <label for="address" class="form-label">Adresse :</label>
+            <input type="text" id="address" class="form-control">
+          </div>
+
+          <div class="row g-2">
+            <div class="form-group col-auto">
+              <label for="postcode" class="form-label">Code Postal :</label>
+              <input type="number" id="postcode" class="form-control">
+            </div>
+            <div class="form-group col-auto">
+              <label for="surname" class="form-label">Commune :</label>
+              <input type="text" id="city" class="form-control">
+            </div>
+          </div>
+
+          <div class="row g-2">
+            <div class="form-group col-auto">
+              <label for="tel" class="form-label">Téléphone :</label>
+              <input type="tel" id="tel" class="form-control">
+            </div>
+            <div class="form-group col-lg-5">
+              <label for="mail" class="form-label">Email :</label>
+              <input type="email" id="mail" class="form-control">
+            </div>
+          </div>
+
+          <div class="form-group col-lg-5">
+            <label for="certificate" class="form-label">Certificat Médical :</label>
+            <input type="file" id="certificate" class="form-control">
+          </div>
+          <button type="submit" class="btn btn-primary">Je m'inscris pour la saison 2022/2023</button>
+        </form>
+      </article>
+    </section>
+  </main>
+  <!-- Findu contenu -->
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-socials">
+      <ul class="socials row">
+        <li class="col-2"><a href=""><img src="assets/svgs/instagram.svg" alt="" width="20"></a></li>
+        <li class="col-2"><a href=""><img src="assets/svgs/tiktok.svg" alt="" width="20"></a></li>
+        <li class="col-2"><a href=""><img src="assets/svgs/twitter.svg" alt="" width="20"></a></li>
+      </ul>
+    </div>
+    
+    <div class="container footer-links">
+      <ul class="row">
+        <li class="col"><a class="no-style" href="">Plan du site</a></li>
+        <li class="col"><a class="no-style" href="">Mentions légales</a></li>
+        <li class="col"><a class="no-style" href="">CGUV</a></li>
+      </ul>
+    </div>
+  </footer>
+  <!-- Fin du Footer -->
+</body>
+</html>
