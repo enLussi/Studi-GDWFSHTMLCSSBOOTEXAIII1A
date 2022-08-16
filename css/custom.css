@@ -38,18 +38,25 @@ header {
 }
 
 /* CSS pour le contenu */
+
 main {
-  margin: 20px 0;
-  padding: 0 10px;
+  padding-top: 20px;
 }
 
-article {
-  margin: 60px 0;
+section {
+  padding: 40px 20px;
+}
+
+.actu {
+  box-shadow: 0 0 10px #0a0a0a;
+}
+
+.actu article {
+  max-width: 900px;
 }
 
 h2 {
   text-align: center;
-  padding-top: 40px;
   font-size: 25px;
 }
 
@@ -78,10 +85,12 @@ article p {
 
 .article-img {
   text-align: center;
+  max-height: 300px;
+  overflow: hidden;
 }
 
 article img {
-  border: 2px solid #0a0a0a;
+  max-width: 500px;
 }
 
 form > div {
@@ -89,10 +98,21 @@ form > div {
   padding: 5px 0;
 }
 
+.upperCase {
+  text-transform: uppercase;
+}
+
+.pin {
+  border: none;
+  width: 15px;
+  height: 15px;
+}
+
 /* CSS pour le footer */
 
 footer {
   margin: 0;
+  background-color: #0a0a0a;
 }
 
 footer ul {
@@ -107,13 +127,10 @@ footer ul {
 }
 
 .footer-socials {
-  background-color: #252525;
-  margin: 0;
   padding: 15px 0;
 }
 
 .footer-links {
-  background-color: #0a0a0a;
   padding: 15px 0;
 }
 
@@ -125,8 +142,10 @@ footer ul {
 /* 
 CSS Responsive
 */
-@media screen and ( max-width: 500px ){
-
+@media screen and ( max-width: 576px ){
+  .wideScreen-display {
+    display: none;
+  }
   /* 
     Responsive pour le header
   */
@@ -154,12 +173,83 @@ CSS Responsive
 
   .table-container {
     margin: 50px 0;
-    overflow: scroll;
+    overflow-x: scroll;
+    overflow-y: hidden;
   }
 
   .table-schedule  {
     width: 800px;
     border: 2px solid #0a0a0a;
   }
-  /*Responsive pour le footer*/
+}
+
+@media screen and (min-width: 576px) {
+
+  body {
+    max-width: 1300px;
+    margin: auto;
+    background-color: #252525;
+  }
+
+  main, header {
+    background-color: white;
+  }
+
+  header {
+    width: 100%;
+  }
+
+  .responsive-display {
+    display: none;
+  }
+
+  .wideScreen-display {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    padding-left: 10%;
+  }
+
+  /* 
+    header
+  */
+  nav {
+    height: 110px;
+  }
+
+  nav ul {
+    border: none;
+    list-style: none;
+
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+
+    max-width: 800px;
+  }
+
+  nav ul li {
+    padding: 5px 20px;
+  }
+
+  .img-header {
+    max-height: 550px;
+    text-align: center;
+  }
+
+
+  /* Contenu */
+
+  .table-container {
+    padding: 50px 0;
+    overflow: auto;
+  }
+
+  .table-schedule  {
+    margin: auto;
+    width: 1000px;
+    border: 2px solid #0a0a0a;
+  }
 }

@@ -21,8 +21,8 @@
     un logo et une image de fonds.
     le <nav> est en display grid
   -->
-  <header>
-    <nav class="container">
+  <header class="container p-0">
+    <nav class="col container responsive-display">
       <div class="row justify-content-md-center">
         <div class="dropdown col-5">
           <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
@@ -40,8 +40,21 @@
         </div>
       </div>
     </nav>
-    <div>
-      <img class="img-header" src="assets/imgs/img-header.jpg" alt="">
+    <nav class="wideScreen-display">
+      <div class="">
+        <img src="assets/imgs/as-logo.png" alt="" height="100">
+      </div>
+      <div class="">
+        <ul class="" >
+          <li class=""><a class="no-style text-dark" href="index.html">Actualité</a></li>
+          <li class=""><a class="no-style text-dark" href="championship.html">Evènement Nationaux</a></li>
+          <li class=""><a class="no-style text-dark" href="subscription.html">Inscription</a></li>
+        </ul>
+      </div>
+
+    </nav>
+    <div class="img-header">
+      <img class="" src="assets/imgs/img-header.jpg" alt="">
     </div>
   </header>
   <!-- Fin Header -->
@@ -50,8 +63,8 @@
     Contenu 
   
   -->
-  <main>
-    <section>
+  <main class="container">
+    <section class="row justify-content-md-center actu">
       <h2>Association Multisport de l'Yonne</h2>
       <article>
         <h3><a class="no-style" href="subscription.html">SAISON 2021/2022</a></h3>
@@ -67,9 +80,9 @@
         <p>Venez assister avec nous aux Championnats de France d'escalade se déroulant pendant l'été.</p>
       </article>
     </section>
-    <section>
+    <section class="row">
       <h2>Sports Pratiqués au sein de notre Association</h2>
-      <article>
+      <article class="col-sm">
         <h3>Tennis</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio magnam deleniti veniam? Vel modi 
           suscipit repellendus quisquam architecto maxime aperiam aliquam corrupti sunt. Qui in reiciendis nostrum 
@@ -79,7 +92,7 @@
           <img src="assets/imgs/article-tennis.jpg" alt="">
         </div>
       </article>
-      <article>
+      <article class="col-sm">
         <h3>Escalade</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio magnam deleniti veniam? Vel modi 
           suscipit repellendus quisquam architecto maxime aperiam aliquam corrupti sunt. Qui in reiciendis nostrum 
@@ -89,7 +102,7 @@
           <img src="assets/imgs/article-escalade.jpg" alt="">
         </div>
       </article>
-      <article>
+      <article class="col-sm">
         <h3>Athlétisme</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio magnam deleniti veniam? Vel modi 
           suscipit repellendus quisquam architecto maxime aperiam aliquam corrupti sunt. Qui in reiciendis nostrum 
@@ -99,7 +112,7 @@
           <img src="assets/imgs/article-athletisme.jpg" alt="">
         </div>
       </article>
-      <article>
+      <article class="col-sm">
         <h3>Canoë</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio magnam deleniti veniam? Vel modi 
           suscipit repellendus quisquam architecto maxime aperiam aliquam corrupti sunt. Qui in reiciendis nostrum 
@@ -111,7 +124,7 @@
       </article>
     </section>
     <section>
-      <h2>Date des entrainement</h2>
+      <h2>Dates des entrainements</h2>
       <!-- table -->
       <div class="table-container">
         <table class="table table-light table-striped table-schedule">
@@ -272,9 +285,9 @@
     
     <div class="container footer-links">
       <ul class="row">
-        <li class="col"><a class="no-style" href="">Plan du site</a></li>
-        <li class="col"><a class="no-style" href="">Mentions légales</a></li>
-        <li class="col"><a class="no-style" href="">CGUV</a></li>
+        <li class="col-2"><a class="no-style" href="">Plan du site</a></li>
+        <li class="col-2"><a class="no-style" href="">Mentions légales</a></li>
+        <li class="col-2"><a class="no-style" href="">CGUV</a></li>
       </ul>
     </div>
   </footer>

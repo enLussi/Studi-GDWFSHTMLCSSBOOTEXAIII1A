@@ -21,8 +21,8 @@
     un logo et une image de fonds.
     le <nav> est en display grid
   -->
-  <header>
-    <nav class="container">
+  <header class="container p-0">
+    <nav class="col container responsive-display">
       <div class="row justify-content-md-center">
         <div class="dropdown col-5">
           <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
@@ -40,14 +40,27 @@
         </div>
       </div>
     </nav>
-    <div>
-      <img class="img-header" src="assets/imgs/img-header.jpg" alt="">
+    <nav class="wideScreen-display">
+      <div class="">
+        <img src="assets/imgs/as-logo.png" alt="" height="100">
+      </div>
+      <div class="">
+        <ul class="" >
+          <li class=""><a class="no-style text-dark" href="index.html">Actualité</a></li>
+          <li class=""><a class="no-style text-dark" href="championship.html">Evènement Nationaux</a></li>
+          <li class=""><a class="no-style text-dark" href="subscription.html">Inscription</a></li>
+        </ul>
+      </div>
+
+    </nav>
+    <div class="img-header">
+      <img class="" src="assets/imgs/img-header.jpg" alt="">
     </div>
   </header>
   <!-- Fin Header -->
   <!-- Contenu -->
-  <main>
-    <section>
+  <main class="container">
+    <section class="row justify-content-md-center">
       <h2>Informations</h2>
       <article>
         <h3>SAISON 2022/2023</h3>
@@ -96,17 +109,17 @@
         <form action="subcription.php" method="post">
 
           <div class="row g-2">
-            <div class="form-group col-lg-5">
+            <div class="form-group col-lg-3">
               <label for="name" class="form-label">Nom :</label>
               <input type="text" id="name" class="form-control">
             </div>
-            <div class="form-group col-lg-5">
+            <div class="form-group col-lg-3">
               <label for="surname" class="form-label">Prénom :</label>
               <input type="text" id="surname" class="form-control">
             </div>
           </div>
 
-          <div class="form-group col-lg-5">
+          <div class="form-group col-lg-3">
             <label for="birthdate" class="form-label">Né le :</label>
             <input id="date" type="date" id="birthdate" class="form-control">
           </div>
@@ -171,9 +184,9 @@
     
     <div class="container footer-links">
       <ul class="row">
-        <li class="col"><a class="no-style" href="">Plan du site</a></li>
-        <li class="col"><a class="no-style" href="">Mentions légales</a></li>
-        <li class="col"><a class="no-style" href="">CGUV</a></li>
+        <li class="col-2"><a class="no-style" href="">Plan du site</a></li>
+        <li class="col-2"><a class="no-style" href="">Mentions légales</a></li>
+        <li class="col-2"><a class="no-style" href="">CGUV</a></li>
       </ul>
     </div>
   </footer>
