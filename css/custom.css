@@ -76,6 +76,10 @@ article p {
   text-align: center;
 }
 
+article img {
+  border: 2px solid #0a0a0a;
+}
+
 /* CSS pour le footer */
 
 footer {
