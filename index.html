@@ -21,21 +21,24 @@
     un logo et une image de fonds.
     le <nav> est en display grid
   -->
-  <header>
-    <nav>
-      <div class="dropdown">
-        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-          <img src="/assets/svgs/aligner-justifier.svg" alt="" height="50">
-        </a>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-          <li><a class="dropdown-item" href="">Actualité</a></li>
-          <li><a class="dropdown-item" href="">Evènement Nationaux</a></li>
-          <li><a class="dropdown-item" href="">Agenda</a></li>
-          <li><a class="dropdown-item" href="">Nos Partenaires</a></li>
-        </ul>
-      </div>
-      <div>
-        <img src="assets/imgs/as-logo.png" alt="" height="50">
+  <header class="">
+    <nav class="container">
+      <div class="row justify-content-md-center">
+        <div class="dropdown col-5">
+          <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="/assets/svgs/aligner-justifier.svg" alt="" width="40" height="40">
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <li><a class="dropdown-item" href="">Actualité</a></li>
+            <li><a class="dropdown-item" href="">Evènement Nationaux</a></li>
+            <li><a class="dropdown-item" href="">Agenda</a></li>
+            <li><a class="dropdown-item" href="">Nos Partenaires</a></li>
+          </ul>
+          <div class=""></div>
+        </div>
+        <div class="col-7">
+          <img src="assets/imgs/as-logo.png" alt="" height="50">
+        </div>
       </div>
     </nav>
     <div>
@@ -50,44 +53,117 @@
   -->
   <main>
     <section>
-      <h2>Sport Pratiqué au sein de notre Association</h2>
+      <h2>Sports Pratiqués au sein de notre Association</h2>
       <article>
         <h3>Tennis</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio magnam deleniti veniam? Vel modi 
           suscipit repellendus quisquam architecto maxime aperiam aliquam corrupti sunt. Qui in reiciendis nostrum 
           molestias repellat aliquid.</p>
-        <p><a href="">Lire la suite</a></p>
-        <img src="assets/imgs/article-tennis.jpg" alt="">
+        <p class="more"><a class="no-style" href="">Lire la suite</a></p>
+        <div class="article-img">
+          <img src="assets/imgs/article-tennis.jpg" alt="">
+        </div>
       </article>
       <article>
         <h3>Escalade</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio magnam deleniti veniam? Vel modi 
           suscipit repellendus quisquam architecto maxime aperiam aliquam corrupti sunt. Qui in reiciendis nostrum 
           molestias repellat aliquid.</p>
-        <p><a href="">Lire la suite</a></p>
-        <img src="assets/imgs/article-escalade.jpg" alt="">
+        <p class="more"><a class="no-style" href="">Lire la suite</a></p>
+        <div class="article-img">
+          <img src="assets/imgs/article-escalade.jpg" alt="">
+        </div>
       </article>
       <article>
         <h3>Athlétisme</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio magnam deleniti veniam? Vel modi 
           suscipit repellendus quisquam architecto maxime aperiam aliquam corrupti sunt. Qui in reiciendis nostrum 
           molestias repellat aliquid.</p>
-        <p><a href="">Lire la suite</a></p>
-        <img src="assets/imgs/article-athletisme.jpg" alt="">
+        <p class="more"><a class="no-style" href="">Lire la suite</a></p>
+        <div class="article-img">
+          <img src="assets/imgs/article-athletisme.jpg" alt="">
+        </div>
       </article>
       <article>
         <h3>Canoë</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio magnam deleniti veniam? Vel modi 
           suscipit repellendus quisquam architecto maxime aperiam aliquam corrupti sunt. Qui in reiciendis nostrum 
           molestias repellat aliquid.</p>
-        <p><a href="">Lire la suite</a></p>
-        <img src="assets/imgs/article-canoe.jpg" alt="">
+        <p class="more"><a class="no-style" href="">Lire la suite</a></p>
+        <div class="article-img">
+          <img src="assets/imgs/article-canoe.jpg" alt="">
+        </div>
       </article>
     </section>
     <section>
       <h2>Date des entrainement</h2>
       <!-- table -->
+      <div class="table-container">
+        <table class="table table-light table-striped">
+          <thead>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col">Semaine 31</th>
+              <th scope="col">Semaine 32</th>
+              <th scope="col">Semaine 33</th>
+              <th scope="col">Semaine 34</th>
+              <th scope="col">Semaine 35</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Tennis</th>
+              <td>02/08 18h</td>
+              <td>09/08 18h</td>
+              <td>17/08 17h30</td>
+              <td>23/08 18h</td>
+              <td>30/08 18h</td>
+            </tr>
+            <tr>
+              <th scope="row">Escalade</th>
+              <td>03/08 15h</td>
+              <td>11/08 14h</td>
+              <td>17/08 14h</td>
+              <td>24/08 15h</td>
+              <td>01/09 16h30</td>
+            </tr>
+            <tr>
+              <th scope="row">Athlétisme</th>
+              <td>01/08 14h <br>04/08 14h</td>
+              <td>08/08 13h30 <br>12/08 14h</td>
+              <td>16/08 13h30 <br>19/08 14h</td>
+              <td>22/08 14h <br>25/08 14h</td>
+              <td>29/08 14h <br>01/09 13h</td>
+            </tr>
+            <tr>
+              <th scope="row">Canoë</th>
+              <td>06/08 14h</td>
+              <td>13/08 14h</td>
+              <td>20/08 14h</td>
+              <td>27/08 14h</td>
+              <td>03/09 14h</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </section>
   </main>
+  <footer>
+    <div class="container footer-socials">
+      <ul class="socials row">
+        <li class="col-2"><a href=""><img src="assets/svgs/instagram.svg" alt="" width="20"></a></li>
+        <li class="col-2"><a href=""><img src="assets/svgs/tiktok.svg" alt="" width="20"></a></li>
+        <li class="col-2"><a href=""><img src="assets/svgs/twitter.svg" alt="" width="20"></a></li>
+      </ul>
+    </div>
+    
+    <div class="container footer-links">
+      <ul class="row">
+        <li class="col"><a class="no-style" href="">Plan du site</a></li>
+        <li class="col"><a class="no-style" href="">Mentions légales</a></li>
+        <li class="col"><a class="no-style" href="">CGUV</a></li>
+      </ul>
+    </div>
+  </footer>
 </body>
 </html>
