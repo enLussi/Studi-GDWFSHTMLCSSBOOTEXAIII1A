@@ -16,23 +16,25 @@
 </head>
 <body>
   <!-- 
-    Header:
-    commun à toutes les pages du site composé d'une barre de navigation avec un élément bootstrap dropdown
+    Header
+    Note: commun à toutes les pages du site composé d'une barre de navigation avec un élément bootstrap dropdown
     un logo et une image de fonds.
     le <nav> est en display grid
   -->
   <header class="container p-0">
+
+    <!-- Menu de navigation pour écran mobile -->
     <nav class="col container responsive-display">
       <div class="row justify-content-md-center">
         <div class="dropdown col-5">
           <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
             <img src="/assets/svgs/aligner-justifier.svg" alt="" width="40" height="40">
           </a>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <li><a class="dropdown-item" href="index.html">Actualité</a></li>
-            <li><a class="dropdown-item" href="championship.html">Evènement Nationaux</a></li>
-            <li><a class="dropdown-item" href="subscription.html">Inscription</a></li>
-          </ul>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="index.html">Actualité</a>
+            <a class="dropdown-item" href="championship.html">Evènement Nationaux</a>
+            <a class="dropdown-item" href="subscription.html">Inscription</a>
+          </div>
           <div class=""></div>
         </div>
         <div class="col-7">
@@ -40,20 +42,22 @@
         </div>
       </div>
     </nav>
-    <nav class="row justify-content-left wideScreen-display">
-      <div class="col-2">
+
+    <!-- Menu de navigation pour écran large -->
+    <nav class="d-sm-flex flex-row justify-content-start wideScreen-display">
+      <div class="">
         <img src="assets/imgs/as-logo.png" alt="" height="100">
       </div>
-      <div class="col-6 align-self-center">
+      <div class="align-self-center">
         <ul class="row text-center" >
-          <li class="col-3"><a class="no-style text-dark" href="index.html">Actualité</a></li>
-          <li class="col-6"><a class="no-style text-dark" href="championship.html">Evènement Nationaux</a></li>
-          <li class="col-3"><a class="no-style text-dark" href="subscription.html">Inscription</a></li>
+          <li class="col-3"><a class="link-std link-std-underline text-dark" href="index.html">Actualité</a></li>
+          <li class="col-6"><a class="link-std link-std-underline text-dark" href="championship.html">Evènement Nationaux</a></li>
+          <li class="col-3"><a class="link-std link-std-underline text-dark" href="subscription.html">Inscription</a></li>
         </ul>
       </div>
-
     </nav>
-    <div class="img-header wideScreen-display">
+    
+    <div class="img-header">
       <img class="" src="assets/imgs/img-header.jpg" alt="">
     </div>
   </header>
