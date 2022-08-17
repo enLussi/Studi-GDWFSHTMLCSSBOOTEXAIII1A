@@ -1,5 +1,8 @@
 * {
   --main-color: #b9b9ff;
+  --dark-color: #0a0a0a;
+  --grey-color: #252525;
+  --white-color: #fafafa;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -44,11 +47,11 @@ main {
 }
 
 section {
-  padding: 40px 20px;
+  padding: 40px 0;
 }
 
 .actu {
-  box-shadow: 0 0 10px #0a0a0a;
+  box-shadow: 0 0 10px var(--dark-color);
 }
 
 .actu article {
@@ -93,6 +96,16 @@ article img {
   max-width: 500px;
 }
 
+.card {
+  max-width: 500px;
+  margin: 20px 20px
+}
+
+.form-sub {
+  padding: 5px;
+  margin: auto;
+}
+
 form > div {
   margin: 5px 0;
   padding: 5px 0;
@@ -112,18 +125,17 @@ form > div {
 
 footer {
   margin: 0;
-  background-color: #0a0a0a;
+}
+
+footer .container {
+  background-color: var(--dark-color);
 }
 
 footer ul {
-  width: 100%;
   list-style: none;
   margin: 0;
   padding: auto;
-
   text-align: center;
-
-  justify-content: center;
 }
 
 .footer-socials {
@@ -135,7 +147,7 @@ footer ul {
 }
 
 .footer-links a{
-  color: #fafafa;
+  color: var(--white-color);
   font-size: 12px;
 }
 
@@ -160,11 +172,13 @@ CSS Responsive
   .img-header {
     height: 45vh;
   }
-  
-  article img {
+
+  .sports {
     margin: auto;
-    width: 300px;
-    height: auto;
+  }
+
+  .card {
+    margin: 20px 0;
   }
 
   /*
@@ -179,19 +193,23 @@ CSS Responsive
 
   .table-schedule  {
     width: 800px;
-    border: 2px solid #0a0a0a;
+    border: 2px solid var(--dark-color);
   }
 }
 
 @media screen and (min-width: 576px) {
 
+  .wideScreen-display {
+    display: flex;
+  }
+
   body {
     max-width: 1300px;
     margin: auto;
-    background-color: #252525;
+    background-color: var(--grey-color);
   }
 
-  main, header {
+  main, header, nav {
     background-color: white;
   }
 
@@ -201,14 +219,6 @@ CSS Responsive
 
   .responsive-display {
     display: none;
-  }
-
-  .wideScreen-display {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: left;
-    padding-left: 10%;
   }
 
   /* 
@@ -235,10 +245,15 @@ CSS Responsive
   }
 
   .img-header {
-    max-height: 550px;
     text-align: center;
+    min-width: 1300px;
+    max-height: 400px;
+    overflow: hidden;  
   }
 
+  .img-header img {
+    min-width: inherit;
+  }
 
   /* Contenu */
 
@@ -250,6 +265,6 @@ CSS Responsive
   .table-schedule  {
     margin: auto;
     width: 1000px;
-    border: 2px solid #0a0a0a;
+    border: 2px solid var(--dark-color);
   }
 }

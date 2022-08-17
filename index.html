@@ -40,20 +40,20 @@
         </div>
       </div>
     </nav>
-    <nav class="wideScreen-display">
-      <div class="">
+    <nav class="row justify-content-left wideScreen-display">
+      <div class="col-2">
         <img src="assets/imgs/as-logo.png" alt="" height="100">
       </div>
-      <div class="">
-        <ul class="" >
-          <li class=""><a class="no-style text-dark" href="index.html">Actualité</a></li>
-          <li class=""><a class="no-style text-dark" href="championship.html">Evènement Nationaux</a></li>
-          <li class=""><a class="no-style text-dark" href="subscription.html">Inscription</a></li>
+      <div class="col-6 align-self-center">
+        <ul class="row text-center" >
+          <li class="col-3"><a class="no-style text-dark" href="index.html">Actualité</a></li>
+          <li class="col-6"><a class="no-style text-dark" href="championship.html">Evènement Nationaux</a></li>
+          <li class="col-3"><a class="no-style text-dark" href="subscription.html">Inscription</a></li>
         </ul>
       </div>
 
     </nav>
-    <div class="img-header">
+    <div class="img-header wideScreen-display">
       <img class="" src="assets/imgs/img-header.jpg" alt="">
     </div>
   </header>
@@ -64,6 +64,7 @@
   
   -->
   <main class="container">
+    <!-- Section actualité -->
     <section class="row justify-content-md-center actu">
       <h2>Association Multisport de l'Yonne</h2>
       <article>
@@ -80,52 +81,55 @@
         <p>Venez assister avec nous aux Championnats de France d'escalade se déroulant pendant l'été.</p>
       </article>
     </section>
-    <section class="row">
+    <!-- Section Liste sports disponible -->
+    <section class="row justify-content-center sports">
       <h2>Sports Pratiqués au sein de notre Association</h2>
-      <article class="col-sm">
-        <h3>Tennis</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio magnam deleniti veniam? Vel modi 
-          suscipit repellendus quisquam architecto maxime aperiam aliquam corrupti sunt. Qui in reiciendis nostrum 
-          molestias repellat aliquid.</p>
-        <p class="more"><a class="no-style" href="">Lire la suite</a></p>
-        <div class="article-img">
-          <img src="assets/imgs/article-tennis.jpg" alt="">
+      <article class="card col-sm-6 p-0">
+        <img class="card-img-top" src="assets/imgs/article-tennis.jpg" alt="">
+        <div class="card-body">
+          <h3 class="card-title">Tennis</h3>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio magnam deleniti veniam? Vel modi 
+            suscipit repellendus quisquam architecto maxime aperiam aliquam corrupti sunt. Qui in reiciendis nostrum 
+            molestias repellat aliquid.</p>
+          <p class="more"><a class="no-style" href="">Lire la suite</a></p>
         </div>
       </article>
-      <article class="col-sm">
-        <h3>Escalade</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio magnam deleniti veniam? Vel modi 
-          suscipit repellendus quisquam architecto maxime aperiam aliquam corrupti sunt. Qui in reiciendis nostrum 
-          molestias repellat aliquid.</p>
-        <p class="more"><a class="no-style" href="">Lire la suite</a></p>
-        <div class="article-img">
-          <img src="assets/imgs/article-escalade.jpg" alt="">
+
+      <article class="card col-sm-6 p-0">
+        <img class="card-img-top" src="assets/imgs/article-escalade.jpg" alt="">
+        <div class="card-body">
+          <h3 class="card-title">Escalade</h3>
+          <p class="car-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio magnam deleniti veniam? Vel modi 
+            suscipit repellendus quisquam architecto maxime aperiam aliquam corrupti sunt. Qui in reiciendis nostrum 
+            molestias repellat aliquid.</p>
+          <p class="more"><a class="no-style" href="">Lire la suite</a></p>
+        </div>  
+      </article>
+      <article class="card col-sm-6 p-0">
+        <img class="card-img-top" src="assets/imgs/article-athletisme.jpg" alt="">
+        <div class="card-body">
+          <h3 class="card-title">Athlétisme</h3>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio magnam deleniti veniam? Vel modi 
+            suscipit repellendus quisquam architecto maxime aperiam aliquam corrupti sunt. Qui in reiciendis nostrum 
+            molestias repellat aliquid.</p>
+          <p class="more"><a class="no-style" href="">Lire la suite</a></p>
         </div>
       </article>
-      <article class="col-sm">
-        <h3>Athlétisme</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio magnam deleniti veniam? Vel modi 
-          suscipit repellendus quisquam architecto maxime aperiam aliquam corrupti sunt. Qui in reiciendis nostrum 
-          molestias repellat aliquid.</p>
-        <p class="more"><a class="no-style" href="">Lire la suite</a></p>
-        <div class="article-img">
-          <img src="assets/imgs/article-athletisme.jpg" alt="">
-        </div>
-      </article>
-      <article class="col-sm">
-        <h3>Canoë</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio magnam deleniti veniam? Vel modi 
-          suscipit repellendus quisquam architecto maxime aperiam aliquam corrupti sunt. Qui in reiciendis nostrum 
-          molestias repellat aliquid.</p>
-        <p class="more"><a class="no-style" href="">Lire la suite</a></p>
-        <div class="article-img">
-          <img src="assets/imgs/article-canoe.jpg" alt="">
+
+      <article class="card col-sm-6 p-0">
+        <img class="card-img-top" src="assets/imgs/article-canoe.jpg" alt="">
+        <div class="card-body">
+          <h3 class="card-title">Canoë</h3>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio magnam deleniti veniam? Vel modi 
+            suscipit repellendus quisquam architecto maxime aperiam aliquam corrupti sunt. Qui in reiciendis nostrum 
+            molestias repellat aliquid.</p>
+          <p class="more"><a class="no-style" href="">Lire la suite</a></p>
         </div>
       </article>
     </section>
+    <!-- Agenda des entrainements -->
     <section>
       <h2>Dates des entrainements</h2>
-      <!-- table -->
       <div class="table-container">
         <table class="table table-light table-striped table-schedule">
           <thead>
@@ -276,17 +280,17 @@
   <!-- Footer -->
   <footer>
     <div class="container footer-socials">
-      <ul class="socials row">
-        <li class="col-2"><a href=""><img src="assets/svgs/instagram.svg" alt="" width="20"></a></li>
-        <li class="col-2"><a href=""><img src="assets/svgs/tiktok.svg" alt="" width="20"></a></li>
-        <li class="col-2"><a href=""><img src="assets/svgs/twitter.svg" alt="" width="20"></a></li>
+      <ul class="socials row justify-content-center">
+        <li class="col-1"><a href=""><img src="assets/svgs/instagram.svg" alt="" width="20"></a></li>
+        <li class="col-1"><a href=""><img src="assets/svgs/tiktok.svg" alt="" width="20"></a></li>
+        <li class="col-1"><a href=""><img src="assets/svgs/twitter.svg" alt="" width="20"></a></li>
       </ul>
     </div>
     
     <div class="container footer-links">
-      <ul class="row">
+      <ul class="row justify-content-center">
         <li class="col-2"><a class="no-style" href="">Plan du site</a></li>
-        <li class="col-2"><a class="no-style" href="">Mentions légales</a></li>
+        <li class="col-3"><a class="no-style" href="">Mentions légales</a></li>
         <li class="col-2"><a class="no-style" href="">CGUV</a></li>
       </ul>
     </div>
